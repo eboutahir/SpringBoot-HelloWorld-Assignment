@@ -13,4 +13,10 @@ public class DemoApplication {
 	}
 }
 
-
+@RestController
+class HelloWorldController {
+	@GetMapping("/")
+	public String hello() {
+		return "Hello,wold!";
+	}
+}
