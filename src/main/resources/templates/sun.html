@@ -8,9 +8,9 @@
 </head>
 <body>
     <div class="container">
-        <img src="hill.png" class="hill">
+        <img th:src="@{src/main/resources/birds.jpg}" class="hill" alt=""/>
         <img src="cloud.png" class="cloud">
-        <img src="templates/birds.png" class="birds">
+        <img src="birds.jpg" class="birds">
         <div class="sun"></div>
         <div class="dark"></div>
         <h1 th:text="${message}"></h1>
