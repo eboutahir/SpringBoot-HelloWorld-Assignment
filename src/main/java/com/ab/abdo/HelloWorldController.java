@@ -20,7 +20,7 @@ public class HelloWorldController {
         }
         else if (hour <= 16){
             model.addAttribute("message", "Good afternoon");
-            return "hello";
+            return "sun";
         }
         else {
             model.addAttribute("message", "good evening");
