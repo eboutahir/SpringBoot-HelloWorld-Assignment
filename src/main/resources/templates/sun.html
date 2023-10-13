@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +10,10 @@
     <div class="container">
         <img src="hill.png" class="hill">
         <img src="cloud.png" class="cloud">
-        <img src="birds.png" class="birds">
+        <img src="templates/birds.png" class="birds">
         <div class="sun"></div>
         <div class="dark"></div>
-        <h1>GOOD MORNING</h1>
+        <h1 th:text="${message}"></h1>
     </div>
 </body>
 </html>
