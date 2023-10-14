@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+        .greeting-message {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+<div class="greeting-message" th:text="${greeting}">Message will be displayed here.</div>
+</body>
+</html>

@@ -8,15 +8,19 @@
 		<version>3.1.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.CIGL</groupId>
-	<artifactId>RhazaliAbderrazzaqHelloWorldProject</artifactId>
+	<groupId>com.cigl</groupId>
+	<artifactId>tp1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>RhazaliAbderrazzaqHelloWorldProject</name>
-	<description>hello world project</description>
+	<name>tp1</name>
+	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -27,8 +31,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
-
 	</dependencies>
 
 	<build>
