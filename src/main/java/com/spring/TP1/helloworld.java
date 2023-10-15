@@ -1,4 +1,5 @@
-package com.example.TP11;
+package com.spring.TP1;
+
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
