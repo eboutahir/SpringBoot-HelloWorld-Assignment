@@ -53,9 +53,7 @@ imageTag = "<img src='/image/g.jfif' alt='Good morning' style='display: block; h
 imageTag = "<img src='/image/after.jfif' alt='Good afternon' style='display: block; height: 90vh;margin: 0 auto;'>";
 }
  else{ 
-    
-    
-    
+  
  imageTag = "<img src='/image/eve.jfif' alt='Good evening' style='display: block; height: 90vh;margin: 0 auto;'>";
     
  }
