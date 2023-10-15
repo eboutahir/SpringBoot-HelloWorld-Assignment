@@ -1,0 +1,45 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.containerNotification
+{
+    padding:15px;
+    width: 91%;
+    margin:0 auto;
+}
+
+.Notification
+{
+    height: 150px;
+    width: 100%;
+    padding:25px;
+    background-image: url('/img01.png');
+
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 10px rgba(97, 97, 97, 0.5);
+    color: #FF6000;
+   border-left: solid 15px #FF6000;
+
+
+
+}
+
+.Notification .title {
+    font-family: cursive;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+.Notification  .muted
+{
+       margin-bottom: 10px;
+       font-size: 18px;
+       font-family: 'Arial Narrow Bold';
+       opacity: 0.9;
+
+}
