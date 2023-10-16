@@ -24,7 +24,7 @@ public class HelloWorldController {
         }
         else {
             model.addAttribute("message", "good evening");
-            return "hello";
+            return "sun";
         }
 
     }
