@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Greeting</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            font-size: 24px;
+            color: #0077B6; /* Custom text color */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div style="text-align: center; padding: 20px;">
+    <h1>Personalized Greeting</h1>
+    <p th:text="${m}"></p>
+</div>
+</body>
+</html>
