@@ -1,8 +1,6 @@
 package com.ToTheListe2.To_the_liste.model;
-
 import jakarta.persistence.*;
 import lombok.*;
-
 @Entity
 @Table(name = "Tasks")
 @NoArgsConstructor
