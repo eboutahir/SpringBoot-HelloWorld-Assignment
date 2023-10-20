@@ -25,9 +25,22 @@ const TaskList = () => {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [taskId, setTaskId] = useState(null);
+  const headerTextStyle = {
+   
+    fontWeight: 'bold',
+   
+    
+  };
+  
+  const cellTextStyle = {
+    textAlign: 'center',
+    fontWeight: 'bold',
+    fontFamily: 'Roboto',
+    
+  };
   const fetchDataFromDatabase = async () => {
     try {
-      const response = await fetch('http://localhost:9090/api/getAlltasks');
+      const response = await fetch('http://localhost:9090/api/getAllTasks');
       const data = await response.json();
       setUserData(data);
     } catch (error) {
@@ -119,29 +132,36 @@ const TaskList = () => {
   };
 
   return (
-    <Container>
-      <Typography variant="h4" gutterBottom style={{ color: 'blue', marginTop: '20px' }}>
-        Liste des tâches
-      </Typography>
-      <Button variant="contained" onClick={handleOpen} style={{ marginBottom: '20px' }}>
-        Ajouter une Tâche
-      </Button>
-      <TableContainer component={Paper}>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+    <Container style={{ border: '2px solid black', padding: '10px', backgroundColor: '#7BDCB5' }}>
+    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <div>
+            <Typography variant="h4" gutterBottom style={{ color: '#FFFFFF', marginTop: '20px' }}>
+              Liste des tâches
+            </Typography> 
+          </div>
+          <div>
+            <Button variant="contained" onClick={handleOpen} style={{ marginBottom: '20px' }}>
+              Ajouter une Tâche
+            </Button>
+          </div>
+        </div>
+      <TableContainer component={Paper} style={{ border: '2px solid black',  backgroundColor:'#f2f3' }}>
         <Table>
           <TableHead>
-            <TableRow>
-              <TableCell>Titre</TableCell>
-              <TableCell>Description</TableCell>
-              <TableCell>Action</TableCell>
-            </TableRow>
+          <TableRow>
+    <TableCell style={{ ...headerTextStyle, ...cellTextStyle }}>Titre</TableCell>
+    <TableCell style={{ ...headerTextStyle, ...cellTextStyle }}> Description</TableCell>
+    <TableCell style={{ ...headerTextStyle, ...cellTextStyle }}>Action</TableCell>
+  </TableRow>
           </TableHead>
           <TableBody>
             {Array.isArray(userData) &&
               userData.map((task) => (
                 <TableRow key={task.id}>
-                  <TableCell>{task.title}</TableCell>
-                  <TableCell>{task.description}</TableCell>
-                  <TableCell align="center">
+                  <TableCell style={cellTextStyle}>{task.title}</TableCell>
+        <TableCell style={cellTextStyle}>{task.description}</TableCell>
+        <TableCell align="center" style={cellTextStyle}>
                     <Button
                       variant="contained"
                       color="primary"
@@ -196,6 +216,7 @@ const TaskList = () => {
         </DialogActions>
       </Dialog>
     </Container>
+    </div>
   );
 };
 
