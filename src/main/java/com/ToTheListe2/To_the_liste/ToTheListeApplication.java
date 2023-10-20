@@ -1,13 +1,13 @@
-package com.projet1.springbootfirstapp;
+package com.ToTheListe2.To_the_liste;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringbootFirstAppApplication {
+public class ToTheListeApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringbootFirstAppApplication.class, args);
+		SpringApplication.run(ToTheListeApplication.class, args);
 	}
 
 }
